@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                <button ng-click="didClickUndoChanges();" ng-disabled="(todoCopy.name === selectedTodo.name && todoCopy.description === selectedTodo.description)" type="button" class="btn btn-danger">Undo Changes</button>
+                <button ng-click="didClickSaveChanges();" ng-disabled="(todoCopy.name === selectedTodo.name && todoCopy.description === selectedTodo.description)" type="submit" class="btn btn-success pull-right">Save Changes</button>
+                <div class="form-group">
+                    <label for="add-todo-name" class="control-label">Name</label>
+                    <input ng-model="todoCopy.name" id="update-todo-name" class="form-control" type="text" name="name" value="{{todoCopy.name}}">
+                </div>
+                <div class="form-group">
+                    <label for="add-todo-description" class="control-label">Description</label>
+                    <textarea ng-model="todoCopy.description" id="update-todo-desciption" class="form-control" name="add-todo-description" rows="8" placeholder="2Do Description"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

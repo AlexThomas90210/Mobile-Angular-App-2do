@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(200, 200, 200);
+}
+
+header {
+    background-color: rgb(40, 40, 40);
+    padding: 8px 0;
+    margin: 0 0 16px;
+}
+
+.row-vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.header__heading {
+    color: rgb(50, 200, 50);
+}
+
+.header__add-todo {
+    float: right;
+}
+
+.todo {
+    background-color: white;
+    padding: 8px 8px;
+    margin: 16px 0 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.todo__head {
+    font-weight: bold;
+}
+
+.todo__body p {
+    /* want to reduce the maximum size of the todo description desplayed on front page
+    http://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-height: 1.4;        /* fallback */
+    max-height: 4.2;
+}
+
+/* Animation CSS */
+@keyframes slideOutLeft {
+    to { transform: translateX(-100%); }
+}
+
+@keyframes slideOutRight {
+    to { transform: translateX(100%); }
+}
+
+@keyFrames slideInLeft {
+    from    { transform:translateX(-100%); }
+    to      { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* need to set position absolute to stack the pages so they apear on same level while animating */
+.page {
+    position:absolute;
+    width:100%;
+}
+
+/* page specific animations */
+/* Home */
+.page-home.ng-enter { animation:slideInLeft 0.3s  ease-out; }
+.page-home.ng-leave { animation:slideOutLeft 0.3s  ease-out; }
+
+/* Edit */
+.page-edit.ng-enter { animation:slideInRight 0.3s both ease-out; }
+.page-edit.ng-leave { animation:slideOutRight 0.3s both ease-out; }
