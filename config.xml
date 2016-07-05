@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "Alex.Thomas.Webelevate.todo"
+		versionCode="1.0"
+		version   = "1">
+
+        <!-- meta data -->
+		<name>Angular-Todo</name>
+		<description>Todo App</description>
+		<author href="https://github.com/AlexThomasWebElevate" email="alex.thomas@webelevate.ie">Alex</author>
+
+        <!-- Features -->
+        <feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+
+        <!-- Preferences -->
+        <preference name="phonegap-version" value="cli-6.1.0" />
+        <preference name="android-build-tool" value="gradle" />
+        <preference name="orientation" value="default" />
+        <preference name="fullscreen" value="true" />
+        <preference name="target-device" value="universal" />
+        <preference name="webviewbounce" value="false" />
+        <preference name="prerendered-icon" value="false" />
+        <preference name="stay-in-webview" value="true" />
+        <preference name="ios-statusbarstyle" value="black-opaque" />
+        <preference name="detect-data-types" value="true" />
+        <preference name="exit-on-suspend" value="true" />
+        <preference name="show-splash-screen-spinner" value="true" />
+        <preference name="auto-hide-splash-screen" value="true" />
+        <preference name="FadeSplashScreen" value="true" />
+        <preference name="EnableViewportScale" value="false" />
+        <preference name="MediaPlaybackRequiresUserAction" value="false" />
+        <preference name="AllowInlineMediaPlayback" value="true" />
+        <preference name="BackupWebStorage" value="none" />
+        <preference name="TopActivityIndicator" value="gray" />
+        <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+        <preference name="KeyboardShrinksView " value="true" />
+        <preference name="HideKeyboardFormAccessoryBar" value="true" />
+        <preference name="SuppressesIncrementalRendering" value="false" />
+        <preference name="windows-arch" value="anycpu" />
+        <preference name="windows-identity-name" value="Windows Todo App" />
+        <preference name="android-minSdkVersion" value="0" />
+        <preference name="android-maxSdkVersion" value="0" />
+        <preference name="android-installLocation" value="auto" />
+        <preference name="SplashScreenDelay" value="2000" />
+        <preference name="ErrorUrl" value="null" />
+        <preference name="BackgroundColor" value="0x000000" />
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="LoadingDialog" value="Loading App,Please Wait" />
+        <preference name="LoadUrlTimeoutValue" value="null" />
+
+        <!-- IOS -->
+		<platform name="ios">
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-72-2x-144px.png" width="144" height="144" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-2x-114px.png" width="114" height="114" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-60-2x-120px.png" width="120" height="120" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-60-3x-180px.png" width="180" height="180" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-76-2x-152px.png" width="152" height="152" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
+		</platform>
+
+        <!-- Android -->
+		<platform name="android">
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-36-ldpi.png" qualifier="ldpi" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-48-mdpi.png" qualifier="mdpi" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-72-hdpi.png" qualifier="hdpi" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-144-xxhdpi.png" qualifier="xxhdpi" />
+		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-ldpi-portrait.png" qualifier="" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-mdpi-portrait.png" qualifier="" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-hdpi-portrait.png" qualifier="" />
+		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-xhdpi-portrait.png" qualifier="" />
+		</platform>
+
+        <!-- Windows -->
+		<platform name="winphone">
+		</platform>
+
+		<icon src="icon.png" />
+</widget>
