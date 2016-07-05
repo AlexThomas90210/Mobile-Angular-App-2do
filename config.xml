@@ -53,30 +53,30 @@
 
         <!-- IOS -->
 		<platform name="ios">
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-72-2x-144px.png" width="144" height="144" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-2x-114px.png" width="114" height="114" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-60-2x-120px.png" width="120" height="120" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-60-3x-180px.png" width="180" height="180" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/ios/icon-76-2x-152px.png" width="152" height="152" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
+		    <icon src="./res/icons/ios/icon-72-2x-144px.png" width="144" height="144" />
+		    <icon src="./res/icons/ios/icon-2x-114px.png" width="114" height="114" />
+		    <icon src="./res/icons/ios/icon-60-2x-120px.png" width="120" height="120" />
+		    <icon src="./res/icons/ios/icon-60-3x-180px.png" width="180" height="180" />
+		    <icon src="./res/icons/ios/icon-76-2x-152px.png" width="152" height="152" />
+		    <splash src="./res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
+		    <splash src="./res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
+		    <splash src="./res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
+		    <splash src="./res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
+		    <splash src="./res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
 		</platform>
 
         <!-- Android -->
 		<platform name="android">
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-36-ldpi.png" qualifier="ldpi" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-48-mdpi.png" qualifier="mdpi" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-72-hdpi.png" qualifier="hdpi" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-144-xxhdpi.png" qualifier="xxhdpi" />
-		    <icon src="esktop/pgicons-577b41789f92e/res/icons/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-ldpi-portrait.png" qualifier="" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-mdpi-portrait.png" qualifier="" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-hdpi-portrait.png" qualifier="" />
-		    <splash src="esktop/pgicons-577b41789f92e/res/screens/android/screen-xhdpi-portrait.png" qualifier="" />
+		    <icon src="./res/icons/android/icon-36-ldpi.png" qualifier="ldpi" />
+		    <icon src="./res/icons/android/icon-48-mdpi.png" qualifier="mdpi" />
+		    <icon src="./res/icons/android/icon-72-hdpi.png" qualifier="hdpi" />
+		    <icon src="./res/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
+		    <icon src="./res/icons/android/icon-144-xxhdpi.png" qualifier="xxhdpi" />
+		    <icon src="./res/icons/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" />
+		    <splash src="./res/screens/android/screen-ldpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-mdpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-hdpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-xhdpi-portrait.png" qualifier="" />
 		</platform>
 
         <!-- Windows -->
