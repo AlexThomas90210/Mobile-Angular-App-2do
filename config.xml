@@ -6,8 +6,8 @@
         versionCode = "10"
 		version   = "1.5.2">
 
-		<name>Todo-App</name>
-		<description>Todo App</description>
+		<name>todo-app</name>
+		<description>todo app for web elevate</description>
 		<author href="https://github.com/AlexThomasWebElevate" email="alex.thomas@webelevate.ie">Alex</author>
         <content src="index.html" />
 
@@ -33,7 +33,6 @@
         <icon src="./res/icons/ios/icon-60-3x-180px.png" platform="ios" width="180" height="180" />
         <icon src="./res/icons/ios/icon-76-2x-152px.png" platform="ios" width="152" height="152" />
         <icon src="./res/icons/android/icon-36-ldpi.png" platform="android" qualifier="ldpi" />
-        <icon src="./res/icons/android/icon-48-mdpi.png" platform="android" qualifier="mdpi" />
         <icon src="./res/icons/android/icon-72-hdpi.png" platform="android" qualifier="hdpi" />
         <icon src="./res/icons/android/icon-96-xhdpi.png" platform="android" qualifier="xhdpi" />
         <icon src="./res/icons/android/icon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
@@ -45,6 +44,5 @@
         <splash src="./res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
         <splash src="./res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
         <splash src="./res/screens/android/screen-ldpi-portrait.png" platform="android" qualifier="ldpi" />
-        <splash src="./res/screens/android/screen-mdpi-portrait.png" platform="android" qualifier="mpdi" />
         <splash src="./res/screens/android/screen-hdpi-portrait.png" platform="android" qualifier="hdpi" />
 </widget>
