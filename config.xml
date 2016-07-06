@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
-		id        = "Alex.Thomas.Webelevate.todo"
-		versionCode="1.1"
-		version   = "1.1">
+		id        = "Alex.Thomas.Webelevate.2do"
+		versionCode="1.5"
+		version   = "1.5">
 
         <!-- meta data -->
 		<name>Angular-Todo</name>
 		<description>Todo App</description>
 		<author href="https://github.com/AlexThomasWebElevate" email="alex.thomas@webelevate.ie">Alex</author>
+        <content src="index.html" />
 
         <!-- Features -->
         <feature name="http://api.phonegap.com/1.0/file"/>
@@ -74,14 +75,10 @@
 		    <icon src="./res/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
 		    <icon src="./res/icons/android/icon-144-xxhdpi.png" qualifier="xxhdpi" />
 		    <icon src="./res/icons/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" />
-		    <splash src="./res/screens/android/screen-ldpi-portrait.png" qualifier="ldpi" />
-		    <splash src="./res/screens/android/screen-mdpi-portrait.png" qualifier="mdpi" />
-		    <splash src="./res/screens/android/screen-hdpi-portrait.png" qualifier="hdpi" />
-		    <splash src="./res/screens/android/screen-xhdpi-portrait.png" qualifier="xhdpi" />
-		</platform>
-
-        <!-- Windows -->
-		<platform name="winphone">
+		    <splash src="./res/screens/android/screen-ldpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-mdpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-hdpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-xhdpi-portrait.png" qualifier="" />
 		</platform>
 
 		<icon src="icon.png" />
