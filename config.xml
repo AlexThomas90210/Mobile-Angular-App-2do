@@ -80,5 +80,9 @@
 		    <splash src="./res/screens/android/screen-xhdpi-portrait.png" qualifier="xhdpi" />
 		</platform>
 
+        <!-- Windows -->
+		<platform name="winphone">
+		</platform>
+
 		<icon src="./res/icons/icon.png" />
 </widget>
