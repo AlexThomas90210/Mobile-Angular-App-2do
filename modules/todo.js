@@ -1,17 +1,17 @@
 angular.module('todoApp', ['ngRoute','ngAnimate'])
     .config(function($routeProvider , $locationProvider){
         $routeProvider
-        .when('/', {
-            templateUrl: './partials/page-home.html',
-            controller: 'homeController'
-        })
-        .when('/todo/:index', {
-            templateUrl: './partials/page-edit.html',
-            controller: 'editController'
-        })
-        .otherwise({
-            redirectTo: '/'
-        });
+            .when('/', {
+                templateUrl: './partials/page-home.html',
+                controller: 'homeController'
+            })
+            .when('/todo/:index', {
+                templateUrl: './partials/page-edit.html',
+                controller: 'editController'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
     })
     .run(function($rootScope , $location){
         //putting some logic on the root scope to handle the navigation & header

@@ -4,7 +4,7 @@
 		xmlns:android = "http://schemas.android.com/apk/res/android"
 		id        = "Alex.Thomas.Webelevate.todo"
 		versionCode="1.0"
-		version   = "1">
+		version   = "1.0">
 
         <!-- meta data -->
 		<name>Angular-Todo</name>
@@ -16,12 +16,14 @@
 		<feature name="http://api.phonegap.com/1.0/network"/>
 
         <!-- Preferences -->
+        <!-- Core Preferences -->
         <preference name="phonegap-version" value="cli-6.1.0" />
         <preference name="android-build-tool" value="gradle" />
         <preference name="orientation" value="default" />
         <preference name="fullscreen" value="true" />
         <preference name="target-device" value="universal" />
         <preference name="webviewbounce" value="false" />
+        <!-- Android Preferences -->
         <preference name="prerendered-icon" value="false" />
         <preference name="stay-in-webview" value="true" />
         <preference name="ios-statusbarstyle" value="black-opaque" />
@@ -31,16 +33,19 @@
         <preference name="auto-hide-splash-screen" value="true" />
         <preference name="FadeSplashScreen" value="true" />
         <preference name="EnableViewportScale" value="false" />
+        <!-- IOS Preferences -->
         <preference name="MediaPlaybackRequiresUserAction" value="false" />
         <preference name="AllowInlineMediaPlayback" value="true" />
         <preference name="BackupWebStorage" value="none" />
         <preference name="TopActivityIndicator" value="gray" />
+        <!-- Windows Preferences -->
         <preference name="KeyboardDisplayRequiresUserAction" value="true" />
         <preference name="KeyboardShrinksView " value="true" />
         <preference name="HideKeyboardFormAccessoryBar" value="true" />
         <preference name="SuppressesIncrementalRendering" value="false" />
         <preference name="windows-arch" value="anycpu" />
         <preference name="windows-identity-name" value="Windows Todo App" />
+        <preference name='windows-target-version' value='8.1' />
         <preference name="android-minSdkVersion" value="0" />
         <preference name="android-maxSdkVersion" value="0" />
         <preference name="android-installLocation" value="auto" />
@@ -73,10 +78,10 @@
 		    <icon src="./res/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
 		    <icon src="./res/icons/android/icon-144-xxhdpi.png" qualifier="xxhdpi" />
 		    <icon src="./res/icons/android/icon-192-xxxhdpi.png" qualifier="xxxhdpi" />
-		    <splash src="./res/screens/android/screen-ldpi-portrait.png" qualifier="" />
-		    <splash src="./res/screens/android/screen-mdpi-portrait.png" qualifier="" />
-		    <splash src="./res/screens/android/screen-hdpi-portrait.png" qualifier="" />
-		    <splash src="./res/screens/android/screen-xhdpi-portrait.png" qualifier="" />
+		    <splash src="./res/screens/android/screen-ldpi-portrait.png" qualifier="ldpi" />
+		    <splash src="./res/screens/android/screen-mdpi-portrait.png" qualifier="mdpi" />
+		    <splash src="./res/screens/android/screen-hdpi-portrait.png" qualifier="hdpi" />
+		    <splash src="./res/screens/android/screen-xhdpi-portrait.png" qualifier="xhdpi" />
 		</platform>
 
         <!-- Windows -->
