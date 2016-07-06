@@ -84,5 +84,5 @@
 		<platform name="winphone">
 		</platform>
 
-		<icon src="./res/icons/icon.png" />
+		<icon src="icon.png" />
 </widget>
