@@ -6,7 +6,6 @@
         versionCode = "10"
 		version   = "1.5.2">
 
-        <!-- meta data -->
 		<name>Todo-App</name>
 		<description>Todo App</description>
 		<author href="https://github.com/AlexThomasWebElevate" email="alex.thomas@webelevate.ie">Alex</author>
@@ -14,12 +13,9 @@
 
         <preference name="permissions" value="none"/>
 
-        <!-- Preferences -->
-        <!-- All -->
         <preference name="orientation"                value="default" />
         <preference name="target-device"              value="universal" />
         <preference name="fullscreen"                 value="true" />
-        <!-- IOS -->
         <preference name="webviewbounce"              value="false" />
         <preference name="prerendered-icon"           value="true" />
         <preference name="stay-in-webview"            value="false" />
@@ -28,18 +24,14 @@
         <preference name="exit-on-suspend"            value="false" />
         <preference name="show-splash-screen-spinner" value="true" />
         <preference name="auto-hide-splash-screen"    value="true" />
-        <!-- Android -->
         <preference name="android-installLocation"    value="auto" />
 
-        <!-- Icons -->
         <icon src="icon.png" />
-        <!-- IOS -->
         <icon src="./res/icons/ios/icon-72-2x-144px.png" platform="ios" width="144" height="144" />
         <icon src="./res/icons/ios/icon-2x-114px.png" platform="ios" width="114" height="114" />
         <icon src="./res/icons/ios/icon-60-2x-120px.png" platform="ios" width="120" height="120" />
         <icon src="./res/icons/ios/icon-60-3x-180px.png" platform="ios" width="180" height="180" />
         <icon src="./res/icons/ios/icon-76-2x-152px.png" platform="ios" width="152" height="152" />
-        <!-- Android -->
         <icon src="./res/icons/android/icon-36-ldpi.png" platform="android" qualifier="ldpi" />
         <icon src="./res/icons/android/icon-48-mdpi.png" platform="android" qualifier="mdpi" />
         <icon src="./res/icons/android/icon-72-hdpi.png" platform="android" qualifier="hdpi" />
@@ -47,15 +39,11 @@
         <icon src="./res/icons/android/icon-144-xxhdpi.png" platform="android" qualifier="xxhdpi" />
         <icon src="./res/icons/android/icon-192-xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
 
-
-        <!-- Splash Screen -->
-        <!-- IOS -->
         <splash src="./res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
         <splash src="./res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
         <splash src="./res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
         <splash src="./res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
         <splash src="./res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
-        <!-- Android -->
         <splash src="./res/screens/android/screen-ldpi-portrait.png" platform="android" qualifier="ldpi" />
         <splash src="./res/screens/android/screen-mdpi-portrait.png" platform="android" qualifier="mpdi" />
         <splash src="./res/screens/android/screen-hdpi-portrait.png" platform="android" qualifier="hdpi" />
