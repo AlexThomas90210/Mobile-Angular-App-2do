@@ -19,9 +19,4 @@ angular.module('todoApp', ['ngRoute','ngAnimate'])
             .otherwise({
                 redirectTo: '/'
             });
-    })
-    /* cache the views, trying to optimise for mobile speed a little here even though its a tiny file anyways  */
-    .run(function ($templateCache, $http) {
-        $http.get('./partials/page-home.html', { cache: $templateCache });
-        $http.get('./partials/page-edit.html', { cache: $templateCache });
     });
