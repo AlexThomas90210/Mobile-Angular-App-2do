@@ -21,7 +21,7 @@ body {
     color: #5cb85c;
 }
 .header--nav {
-    padding: 16px 0 8px;
+    padding: 32px 0 8px;
     margin: 0 0 16px;
 }
 .header__add-todo {
