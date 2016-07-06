@@ -2,10 +2,10 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "Alex.Thomas.web.elevate.assessment.todo"
-		version   = "1.5.1">
+		version   = "1.5.2">
 
         <!-- meta data -->
-		<name>Angular-Todo-App</name>
+		<name>Todo-App</name>
 		<description>Todo App</description>
 		<author href="https://github.com/AlexThomasWebElevate" email="alex.thomas@webelevate.ie">Alex</author>
         <content src="index.html" />
