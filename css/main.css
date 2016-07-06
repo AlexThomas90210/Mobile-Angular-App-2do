@@ -1,41 +1,59 @@
+/*
+*	Author:	Alex Thomas
+*	Assignment:	WE4 Mobile	Web	Applications,	Digital	Skills	Academy
+*	Date	:	2016/07/06
+*/
+
 body {
     background-color: rgb(200, 200, 200);
 }
 
-header {
-    background-color: rgb(40, 40, 40);
-    padding: 8px 0;
-    margin: 0 0 16px;
-}
-
+/* used to vertically align cols inside a row */
 .row-vertical-align {
     display: flex;
     align-items: center;
 }
 
-.header__heading {
-    color: rgb(50, 200, 50);
-}
 
+/* Header */
+.header {
+    background-color: rgb(40, 40, 40);
+    color: #5cb85c;
+}
+.header--nav {
+    padding: 16px 0 8px;
+    margin: 0 0 16px;
+}
 .header__add-todo {
     float: right;
 }
 
+
+/* Todo */
 .todo {
     background-color: white;
-    padding: 8px 8px;
+    padding: 8px 35px 8px 8px;
     margin: 16px 0 0;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* relative to position the todo__delete at top right */
+    position: relative;
+    overflow: hidden;
 }
-
 .todo__head {
     font-weight: bold;
 }
-
+.todo__delete {
+    background-color: #d9534f;
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 8px 12px;
+}
 .todo__body p {
     /* want to reduce the maximum size of the todo description desplayed on front page
-    http://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css */
+    http://stackoverflow.com/questions/3922739/limit-text-length-to-n-lines-using-css
+    */
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -45,17 +63,26 @@ header {
     max-height: 4.2;
 }
 
-/* Animation CSS */
+
+/* make all ng-click have a pointer so user knows they are clickable,(only usefull for browser use i guess) */
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
+
+/* Animation CSS , using keyframes to define simple animations, then I can combine them as I like with ng-enter & ng-leave */
 @keyframes slideOutLeft {
-    to { transform: translateX(-100%); }
+    to     { transform: translateX(-100%); }
 }
 
 @keyframes slideOutRight {
-    to { transform: translateX(100%); }
+    to      { transform: translateX(100%); }
 }
 
 @keyFrames slideInLeft {
-    from    { transform:translateX(-100%); }
+    from    { transform: translateX(-100%); }
     to      { transform: translateX(0); }
 }
 
@@ -64,17 +91,51 @@ header {
     to      { transform: translateX(0); }
 }
 
+@keyframes fadeIn {
+    from    { opacity: 0; }
+    to      { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from    { opacity: 1 }
+    to      { opacity: 0 }
+}
+
+@keyframes shrink {
+    from    { max-height: 90px }
+    to      { max-height: 0 }
+}
+
+@keyframes grow {
+    from    { max-height: 0 }
+    to      { max-height: 90px }
+}
+
 /* need to set position absolute to stack the pages so they apear on same level while animating */
 .page {
     position:absolute;
     width:100%;
 }
 
+/* for the animations im using the ng-animate module which adds ng-enter & ng-leave to pages added in ng-view and items added in ng-repeat
+
 /* page specific animations */
 /* Home */
-.page-home.ng-enter { animation:slideInLeft 0.3s  ease-out; }
-.page-home.ng-leave { animation:slideOutLeft 0.3s  ease-out; }
-
+.page-home.ng-enter { animation:slideInLeft 0.3s ease-out; }
+.page-home.ng-leave { animation:slideOutLeft 0.3s ease-out; }
 /* Edit */
-.page-edit.ng-enter { animation:slideInRight 0.3s both ease-out; }
-.page-edit.ng-leave { animation:slideOutRight 0.3s both ease-out; }
+.page-edit.ng-enter { animation:slideInRight 0.3s ease-out; }
+.page-edit.ng-leave { animation:slideOutRight 0.3s ease-out; }
+
+
+/* Animations for ng-repeat, just need to add the class repeat-fade to an ng-repeat for the animations to kick in */
+.repeat-fade.ng-enter {
+    animation:  fadeIn 1s,
+                grow 1s
+
+}
+.repeat-fade.ng-leave {
+    animation:  fadeOut 1s,
+                slideOutLeft 1s,
+                shrink 1s
+}

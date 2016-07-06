@@ -11,20 +11,16 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 <body>
 
     <!-- Header -->
-    <header>
+    <header ng-controller="navigationController" class="header header--nav">
         <div class="container">
             <div class="row row-vertical-align">
                 <div class="col-xs-3">
+                    <!-- ng-hide to hide the back button when we are on home page because there is no need for a back button -->
                     <a ng-click="back();" ng-hide="location.path() === '/'" class="btn btn-default">Back</a>
                 </div>
                 <div class="col-xs-6 text-center">
@@ -34,6 +30,7 @@
         </div>
     </header>
 
+    <!-- controllers will have a pageClass attribute to give each a specific animations when showing/hiding -->
     <div class="page {{ pageClass }}" ng-view>
 
     </div>
@@ -54,6 +51,12 @@
 
     <!-- Custom Scripts -->
     <!-- Todo Module -->
-    <script src="./modules/todo.js" charset="utf-8"></script>
+    <script src="./modules/todo.module.js" charset="utf-8"></script>
+    <!-- Model -->
+    <script src="./modules/services/todoService.factory.js" charset="utf-8"></script>
+    <!-- Controllers -->
+    <script src="./modules/controllers/home.controller.js" charset="utf-8"></script>
+    <script src="./modules/controllers/edit.controller.js" charset="utf-8"></script>
+    <script src="./modules/controllers/navigation.controller.js" charset="utf-8"></script>
 </body>
 </html>

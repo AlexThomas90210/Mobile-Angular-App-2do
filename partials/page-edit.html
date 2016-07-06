@@ -1,16 +1,28 @@
+<!--
+*	Author:	Alex Thomas
+*	Assignment:	WE4 Mobile	Web	Applications,	Digital	Skills	Academy
+*	Date	:	2016/07/06
+-->
+
+<!-- Edit Todo View -->
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
             <form>
+                <!-- Using ng-disabled on these 2 buttons if the copy is the same as the original todo -->
                 <button ng-click="didClickUndoChanges();" ng-disabled="(todoCopy.name === selectedTodo.name && todoCopy.description === selectedTodo.description)" type="button" class="btn btn-danger">Undo Changes</button>
                 <button ng-click="didClickSaveChanges();" ng-disabled="(todoCopy.name === selectedTodo.name && todoCopy.description === selectedTodo.description)" type="submit" class="btn btn-success pull-right">Save Changes</button>
+
+                <!-- todoCopy.Name model form group-->
                 <div class="form-group">
-                    <label for="add-todo-name" class="control-label">Name</label>
-                    <input ng-model="todoCopy.name" id="update-todo-name" class="form-control" type="text" name="name" value="{{todoCopy.name}}">
+                    <label for="update-todo-name" class="control-label">Name</label>
+                    <input ng-model="todoCopy.name" id="update-todo-name" class="form-control" type="text" placeholder="2Do Name">
                 </div>
+
+                <!-- todoCopy.Description model form group -->
                 <div class="form-group">
-                    <label for="add-todo-description" class="control-label">Description</label>
-                    <textarea ng-model="todoCopy.description" id="update-todo-desciption" class="form-control" name="add-todo-description" rows="8" placeholder="2Do Description"></textarea>
+                    <label for="update-todo-description" class="control-label">Description</label>
+                    <textarea ng-model="todoCopy.description" id="update-todo-description" class="form-control" rows="8" placeholder="2Do Description"></textarea>
                 </div>
             </form>
         </div>

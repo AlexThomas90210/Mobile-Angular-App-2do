@@ -1,18 +1,29 @@
+<!--
+*	Author:	Alex Thomas
+*	Assignment:	WE4 Mobile	Web	Applications,	Digital	Skills	Academy
+*	Date	:	2016/07/06
+-->
+
 <!-- Todo List View-->
 <div class="container">
 
+    <!-- Row for filter box and add todo button -->
     <div class="row row-vertical-align">
         <div class="col-xs-8">
-            <input ng-model="filter.name" type="text" name="name" placeholder="Filter Name" value="">
+            <!-- filter.name as the ng-model so that it only filters by the name of the todo -->
+            <input ng-model="filter.name" type="text" name="name" placeholder="Filter By Name" value="">
         </div>
         <div class="col-xs-4">
+            <!-- using a ng-click and programatically showing the modal as with the animate module a bug was happening if using a href -->
             <a ng-click="showAddTodoModal();" class="btn btn-success header__add-todo" data-toggle="modal"> Add 2Do </a>
         </div>
     </div>
 
     <!-- Todo List -->
     <div class="row">
-        <div data-ng-repeat="todo in todoList | filter:filter" class="col-xs-12">
+        <!-- adding the repeat-fade class here to make use of the animations defined in the main.css class -->
+        <div data-ng-repeat="todo in todoList | filter:filter" class="col-xs-12 repeat-fade">
+            <!-- using the $index inside the function call so that function can add the index to the url which will be used by the next controller -->
             <div ng-click="didClickTodoAtIndex($index);" class="todo">
                 <div class="todo__head">
                     <p>{{todo.name}}</p>
@@ -20,38 +31,46 @@
                 <div class="todo__body">
                     <p>{{todo.description}}</p>
                 </div>
+                <!-- Delete Todo Button -->
+                <div ng-click="didClickDeleteTodoAtIndex($index);" class="todo__delete">
+                    X
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal Popup to add todo -->
+<!-- Bootstrap Modal Popup to add todo -->
 <div class="modal fade" id="add2Do" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <!-- Modal Head -->
-            <div class="modal-header">
+            <div class="modal-header header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title text-center">Add 2Do</h4>
             </div>
 
             <!-- Add Todo Form -->
-            <form id="add-todo-form" ng-submit="addTodoFormSubmit();" class="form-horizontal" method="post" action="" onsubmit="return false;">
+            <form ng-submit="addTodoFormSubmit();" class="form-horizontal">
                 <!-- Modal Body -->
                 <div class="modal-body">
+
+                    <!-- newTodoName model form group-->
                     <div class="form-group">
                         <label for="add-todo-name" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
                             <input data-ng-model="newTodoName" id="add-todo-name" type="text" class="form-control" name="Name" required placeholder="Name">
                         </div>
                     </div>
+                    <!-- newTodoDescription model form group -->
                     <div class="form-group">
                         <label for="add-todo-description" class="col-sm-2 control-label">Description</label>
                         <div class="col-sm-10">
                             <textarea data-ng-model="newTodoDescription" id="add-todo-desciption" class="form-control" name="add-todo-description" rows="8" placeholder="2Do Description"></textarea>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Modal Footer -->
